@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+}
+main {
+  .mentor {
+    .mentor_content {
+      display: flex !important;
+      justify-content: space-between !important;
+
+      .mentor_image {
+        border-radius: 8px;
+        background: var(--Text-In-Field, #ccc);
+        max-width: 608px;
+        width: 100%;
+        height: 657px;
+        margin-bottom: 224px;
+      }
+      .mentor_text {
+        padding-top: 40px;
+        padding-left: 100px;
+        h1 {
+          color: var(--Text-Tittle, #1c3554);
+          font-variant-numeric: lining-nums proportional-nums;
+          font-family: Rubik;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 63.984px;
+        }
+        p {
+          padding-top: 32px;
+          padding-bottom: 14px;
+          max-width: 565px;
+          color: var(--Text-Body, #808080);
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 27px;
+        }
+        .mentor-btn {
+          border: none;
+          cursor: pointer;
+          margin-top: 40px;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          padding: 16px 40px;
+          border-radius: 8px;
+          background: transparent;
+          transition: 0.5s;
+          &:hover {
+            border: none;
+            background: var(--Primary-Pink, #f72585);
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .mentor_content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    .mentor_image {
+      margin: 0 auto;
+    }
+    .mentor_text {
+      display: flex;
+      flex-direction: column;
+      align-items: center !important;
+      margin: 0 auto !important;
+      margin-left: -90px !important;
+      h1 {
+        font-size: 30px !important;
+      }
+    }
+  }
+}
